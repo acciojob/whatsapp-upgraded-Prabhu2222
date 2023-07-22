@@ -27,8 +27,8 @@ public class WhatsappRepository  {
             gp.setName(users.get(1).getName());
         }
         if(size>2){
-            gp.setName("Group "+this.customGroupCount);
             customGroupCount++;
+            gp.setName("Group "+this.customGroupCount);
             adminMap.put(gp,users.get(0));
         }
         gp.setNumberOfParticipants(size);
